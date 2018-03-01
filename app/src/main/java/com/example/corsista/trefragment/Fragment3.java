@@ -29,6 +29,13 @@ public class Fragment3 extends Fragment {
                 mCallback.RitornaFragment2();
             }
         });
+
+        Button lvItem2 = (Button) view.findViewById(R.id.avanti3);
+        lvItem2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mCallback.PassaFragment1();
+            }
+        });
     }
 
     @Override

@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements Fragment1.si{
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             fragmentTransaction.add(R.id.fragmentContainer, fragment);
+            fragmentTransaction.addToBackStack("FRAG1");
             fragmentTransaction.commit();
         }
 
@@ -55,5 +56,11 @@ public class MainActivity extends AppCompatActivity implements Fragment1.si{
     public void RitornaFragment2() {
         FragmentManager fm = getSupportFragmentManager();
         fm.popBackStack();
+    }
+
+    @Override
+    public void PassaFragment1() {
+        FragmentManager fm = getSupportFragmentManager();
+        fm.popBackStack("FRAG1", 0);
     }
 }

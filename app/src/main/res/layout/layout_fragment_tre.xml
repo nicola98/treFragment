@@ -6,14 +6,26 @@
     android:background="@color/colorPrimaryDark" >
 
     <Button
-        android:id="@+id/indietro3"
+        android:text="avanti"
+        android:id="@+id/avanti3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp" />
+
+    <Button
+        android:id="@+id/indietro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/avanti3"
+        android:layout_alignBottom="@+id/avanti3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="17dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginStart="19dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
         android:text="indietro" />
 </RelativeLayout>

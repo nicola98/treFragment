@@ -50,6 +50,7 @@ public class Fragment1 extends Fragment {
         public void PassaFragment3();
         public void RitornaFragment1();
         public void RitornaFragment2();
+        public void PassaFragment1();
     }
 }
 

@@ -13,39 +13,13 @@ import android.widget.Button;
  */
 
 public class Fragment3 extends Fragment {
-    Fragment1.si mCallback;
+
+    public Fragment3(){    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 // Inflate the layout for this fragment
         return inflater.inflate(R.layout.layout_fragment_tre, container, false);
     }
 
-    @Override
-    public  void onViewCreated(View view, Bundle savedInstanceState)
-    {
-        Button lvItem = (Button) view.findViewById(R.id.indietro3);
-        lvItem.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mCallback.RitornaFragment2();
-            }
-        });
-
-        Button lvItem2 = (Button) view.findViewById(R.id.avanti3);
-        lvItem2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mCallback.PassaFragment1();
-            }
-        });
-    }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mCallback = (Fragment1.si) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnHeadlineSelectedListener()");
-        }
-    }
 }

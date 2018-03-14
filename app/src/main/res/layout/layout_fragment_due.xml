@@ -5,27 +5,8 @@
     android:padding="5dp"
     android:background="@color/colorPrimary" >
 
-    <Button
-        android:text="avanti"
-        android:id="@+id/avanti2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="12dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginRight="18dp" />
-
-    <Button
-        android:id="@+id/indietro2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/avanti2"
-        android:layout_alignBottom="@+id/avanti2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
-        android:text="indietro" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="secondo"/>
 </RelativeLayout>

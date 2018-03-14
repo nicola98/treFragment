@@ -16,41 +16,13 @@ import android.widget.TextView;
  */
 
 public class Fragment1 extends Fragment {
-    si mCallback;
+
+    public Fragment1(){    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 // Inflate the layout for this fragment
         return inflater.inflate(R.layout.layout_fragment_uno, container, false);
-    }
-
-    @Override
-    public  void onViewCreated(View view, Bundle savedInstanceState)
-    {
-        Button lvItem = (Button) view.findViewById(R.id.avanti1);
-        lvItem.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                mCallback.PassaFragment2();
-            }
-        });
-    }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        try {
-            mCallback = (si) activity;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(activity.toString()
-                    + " must implement OnHeadlineSelectedListener()");
-        }
-    }
-
-    public interface si {
-        public void PassaFragment2();
-        public void PassaFragment3();
-        public void RitornaFragment1();
-        public void RitornaFragment2();
-        public void PassaFragment1();
     }
 }
 
